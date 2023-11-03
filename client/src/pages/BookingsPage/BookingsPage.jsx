@@ -15,9 +15,8 @@ export const BookingsPage = () => {
 
   return <div className="App">
     <Link to="/logout">Logout</Link>
-    <Bookings/>
- 
     <CreateForm/>
+    <Bookings/>
   </div>
 
 }
