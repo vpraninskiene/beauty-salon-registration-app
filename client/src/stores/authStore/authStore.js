@@ -90,6 +90,8 @@ const authStore = create((set) => ({
     },
 
     register: async () => {
+
+        try{
         const { registerForm } = authStore.getState();
 
         const res = await axios.post("/register", registerForm, { withCredentials: true, 
@@ -104,8 +106,28 @@ const authStore = create((set) => ({
             },
         });
         
-        console.log(res);
-    },
+        if (!res.ok) {
+            console.log(res);
+        }
+
+} catch (error) {
+    
+    set({
+        registerForm: {
+            fname: "",
+            lname: "",
+            email: "",
+            password: "",
+        },
+    }); 
+    
+    alert("Email already exists")
+    
+};
+
+
+
+},
 
     logout: async () => {
         await axios.get("/logout", { withCredentials: true });

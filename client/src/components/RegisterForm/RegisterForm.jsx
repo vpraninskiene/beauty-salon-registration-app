@@ -17,7 +17,7 @@ export default function RegisterForm() {
     return (
         <form onSubmit={handleRegister}>
             <input onChange={store.updateRegisterForm} value={store.registerForm.fname} type="text" name="fname" />
-            <input onChange={store.updateRegisterForm} value={store.registerForm.email} type="text" name="lname" />
+            <input onChange={store.updateRegisterForm} value={store.registerForm.lname} type="text" name="lname" />
             <input onChange={store.updateRegisterForm} value={store.registerForm.email} type="email" name="email" />
             <input onChange={store.updateRegisterForm} value={store.registerForm.password} type="password" name="password" />
             <button type='submit'>Submit</button>
