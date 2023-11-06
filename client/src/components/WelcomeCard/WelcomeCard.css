@@ -1,0 +1,11 @@
+.welcome-block-wrapper {
+    height: 80vh;
+    background-image: url(../../assets/welcome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}

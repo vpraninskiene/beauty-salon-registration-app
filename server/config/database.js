@@ -9,6 +9,6 @@ const connectToDB = async () => {
         console.error(error);
         process.exit(1);
     }
-}
+};
 
 module.exports = connectToDB;

@@ -1,0 +1,32 @@
+
+.registration-card-internal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(157, 191, 205);
+    padding: 50px;  
+    gap: 20px;  
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+
+.registration-card-internal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.registration-card-internal form input {
+    height: 40px;
+    width: 300px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    margin-bottom: 10px; 
+    padding-left: 10px; 
+}
+
+

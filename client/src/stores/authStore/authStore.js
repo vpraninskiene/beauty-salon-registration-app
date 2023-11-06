@@ -45,7 +45,6 @@ const authStore = create((set) => ({
     login: async () => {
 
         try {
-      
             const { loginForm } = authStore.getState();
 
             const res = await axios.post("/login", loginForm, { withCredentials: true 
@@ -63,21 +62,17 @@ const authStore = create((set) => ({
                 console.log("Logedin");
             }
 
-    } catch (error) {
-        
-        set({
-            loginForm: {
-                email: "",
-                password: "",
-            },
-        }); 
-        
-        alert("Email or password did not match.")
-        
-    };
-
-
-
+        } catch (error) {
+            
+            set({
+                loginForm: {
+                    email: "",
+                    password: "",
+                },
+            }); 
+            
+            alert("Email or password did not match.")
+        };
     },
 
     checkAuth: async () => {
@@ -92,48 +87,43 @@ const authStore = create((set) => ({
     register: async () => {
 
         try{
-        const { registerForm } = authStore.getState();
+            const { registerForm } = authStore.getState();
 
-        const res = await axios.post("/register", registerForm, { withCredentials: true, 
-        });
+            const res = await axios.post("/register", registerForm, { withCredentials: true, 
+            });
 
-        set({
-            registerForm: {
-                fname: "",
-                lname: "",
-                email: "",
-                password: "",
-            },
-        });
-        
-        if (!res.ok) {
-            console.log(res);
-        }
+            set({
+                registerForm: {
+                    fname: "",
+                    lname: "",
+                    email: "",
+                    password: "",
+                },
+            });
+            
+            if (!res.ok) {
+                console.log(res);
+            }
 
-} catch (error) {
-    
-    set({
-        registerForm: {
-            fname: "",
-            lname: "",
-            email: "",
-            password: "",
-        },
-    }); 
-    
-    alert("Email already exists")
-    
-};
-
-
-
-},
+        } catch (error) {
+            
+            set({
+                registerForm: {
+                    fname: "",
+                    lname: "",
+                    email: "",
+                    password: "",
+                },
+            }); 
+            
+            alert("Email already exists")   
+        };
+    },
 
     logout: async () => {
         await axios.get("/logout", { withCredentials: true });
         set({ loggedIn: false });
     },
-
 }));
 
 export default authStore;

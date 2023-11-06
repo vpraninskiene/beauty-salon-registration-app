@@ -1,0 +1,33 @@
+.table-wrapper {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-wrapper h2 {
+    margin-bottom: 40px;
+    color: rgb(77, 75, 75);
+}
+
+th {
+    background-color: rgb(157, 191, 205);
+    color: #e1e3e6;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    width: 400px;
+  }
+
+  tr:hover {
+    background-color: rgb(224, 226, 230, 0.5);}
+
+  th:nth-child(6) {
+    width: 45px;
+    background-color: transparent;
+    border-bottom: transparent;
+  }
