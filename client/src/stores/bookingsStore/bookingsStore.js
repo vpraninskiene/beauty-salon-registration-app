@@ -61,7 +61,6 @@ export const bookingsStore = create((set) => ({
     deleteBooking: async (_id) => {
         await axios.delete(`/bookings/${_id}`);
         const { bookings } = bookingsStore.getState();
-
         const newBookings = bookings.filter((booking) => {
             return booking._id;
         });

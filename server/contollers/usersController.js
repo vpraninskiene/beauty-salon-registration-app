@@ -4,6 +4,7 @@ var jwt = require('jsonwebtoken');
 
 
 async function register (req, res) {
+
   try {
     const { fname, lname, email, password } = req.body;
 
@@ -12,12 +13,13 @@ async function register (req, res) {
     await User.create({ fname, lname, email, password: hashedPassword });
 
     res.sendStatus(200);
-} catch(err) {
-  console.log(err);
-  res.sendStatus(400);
-}
 
-}
+  } catch(err) {
+      console.log(err);
+      res.sendStatus(400);
+  }
+
+};
 
 async function login(req, res) {
   try{
@@ -43,7 +45,7 @@ async function login(req, res) {
     console.log(err);
     res.sendStatus(400);
   }
-}
+};
 
 function logout(req, res) {
   try {
@@ -53,7 +55,7 @@ function logout(req, res) {
     console.log(err);
     res.sendStatus(400);
   }
-}
+};
 
 function checkAuth(req, res) {
   try {
@@ -62,7 +64,7 @@ function checkAuth(req, res) {
     console.log(err);
     return res.sendStatus(400);
   }
-}
+};
 
 module.exports = {
     register,
