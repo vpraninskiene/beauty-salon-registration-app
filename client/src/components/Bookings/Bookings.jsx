@@ -21,8 +21,8 @@ export const Bookings = () => {
                 </thead>
                 <tbody>
                   {store.bookings && store.bookings.map(booking => {
-              return <Booking booking={booking} key={booking._id}/>;
-            })};
+              return <Booking booking={booking} key={booking._id}/>
+            })}
                 </tbody>
             </table>
           </section>
