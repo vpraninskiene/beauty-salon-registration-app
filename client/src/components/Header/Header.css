@@ -1,0 +1,21 @@
+.header-wrapper {
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    color: white;
+}
+
+.header-content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:#9cbecd;
+    color: white;
+    padding-top: 10px;
+}
+
+.logo-img {
+    height: 120px;
+    width: 120px;
+}

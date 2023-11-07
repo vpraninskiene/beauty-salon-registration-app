@@ -1,0 +1,9 @@
+.registration-page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    background-image: linear-gradient(to bottom, rgba(174, 193, 212, 0.6), rgba(194, 211, 228, 0.6)), url(../../assets/welcome.jpg);
+}

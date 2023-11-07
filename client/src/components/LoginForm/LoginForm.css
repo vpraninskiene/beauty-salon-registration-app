@@ -1,0 +1,28 @@
+.login-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 450px;
+    background-color: rgb(157, 191, 205, 0.9);
+    padding: 50px;  
+    gap: 30px;  
+    text-align: center;
+    color: rgb(77, 75, 75);
+}
+
+.login-card-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-card-wrapper form input {
+    height: 40px;
+    width: 250px;
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    margin-bottom: 10px;
+    padding-left: 10px; 
+}

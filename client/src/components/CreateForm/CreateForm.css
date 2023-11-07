@@ -1,0 +1,26 @@
+.booking-form-wrapper h1 {
+    text-align: center;
+    padding-bottom: 50px;
+    color: rgb(77, 75, 75);
+}
+
+.booking-registration-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(157, 191, 205);
+    padding: 30px;  
+    gap: 15px;  
+    color: rgb(77, 75, 75);
+}
+
+.booking-registration-form input {
+    background-color: rgb(238, 238, 238);
+    border-color: white;
+    margin: auto;
+    height: 35px;
+    width: 250px;
+    padding-left: 10px;
+}
+

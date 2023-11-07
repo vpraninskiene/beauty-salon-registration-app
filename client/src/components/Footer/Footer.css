@@ -1,0 +1,12 @@
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+    background-color:#9cbecd;
+    color: white;
+}
+
+.footer-wrapper span {
+    color: white;
+}
